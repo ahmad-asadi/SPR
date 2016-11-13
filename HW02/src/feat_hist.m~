@@ -1,0 +1,9 @@
+function feat_hist(train_data,i)
+    ax = subplot(2,1,i);
+    binrange = 1:0.2:5 ;
+    [bins] = histc(train_data(:,1),binrange);
+
+    figure;
+    bar(ax, binrange, bins, 'histc') ;
+
+end

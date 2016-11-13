@@ -279,7 +279,7 @@ minimize the error by adjusting the threshold.\\
 4 & 0\\
 0 & 4
 \end{matrix}
-\right]^-1 \left[ \begin{matrix}
+\right]^{-1} \left[ \begin{matrix}
 -2 \\
 0
 \end{matrix} \right] = \frac{1}{16} \left[ \begin{matrix}
@@ -824,6 +824,32 @@ conditional densities, $p ( x | c_1 )$ and $p ( x | c_2 )$ are multivariate Gaus
 \begin{enumerate}
 \item Write the discriminant functions for this problem in the form of $g_1 ( x ) = log p ( x | c_1 ) + log p ( c_1 )$ (same for $g_2 ( x )$ ). \\
 
+The typical discriminant function could be specified as equation \eqref{eq:9-1}. 
+\begin{equation}
+P(W_1|X)\gl P(W_2|X) \rightarrow \frac{P(X|W_1)P(W_1)}{P(X)} .\gl \frac{P(X|W_2)P(W_2)}{P(X)} 
+\label{eq:9-1}
+\end{equation}
+So with the same $P(X)$ for two classes, it will be in the form of equation \eqref{eq:9-2}
+\begin{equation}
+P(X|W_1)P(W_1) .\gl P(X|W_2)P(W_2)
+\label{eq:9-2}
+\end{equation}
+Also, with respect to $log()$ function properties, it is possible to rewrite the equation \eqref{fig:9-2} in the form of equation \eqref{eq:9-3}.
+\begin{align*}
+log(P(X|W_1)P(W_1)) &.\gl log(P(X|W_2)P(W_2)) \\
+\rightarrow log(P(X|W_1)) + log(P(W_1)) &.\gl  log(P(X|W_2)) + log(P(W_2))
+\numberthis
+\label{eq:9-3}
+\end{align*}
+
+So defining $g_i(X)$ as follows yields good discriminant functions for each class.
+\begin{align*}
+g_i(X) =  log(P(X|W_i)) + log(P(W_i)) 
+\numberthis
+\label{eq:9-4}
+\end{align*}
+
+For the testing a new data, it is reasonable according to \eqref{eq:9-3} and \eqref{eq:9-4} to just compare the results of functions $g_1(X)$ and $g_2(X)$ and assign the $X$ to the class which results larger value.
 
 \begin{center}
 \line(1,0){250}
@@ -833,6 +859,9 @@ conditional densities, $p ( x | c_1 )$ and $p ( x | c_2 )$ are multivariate Gaus
 
 \item Prove that the optimal decision boundary, at $g ( x ) = g_1 ( x ) - g_2 ( x ) = 0$ , can be written in the form of a linear discriminant, $w^Tx + w_0 = 0$ , where $w$ is a d-dimensional weight vector and $w_0$ is a scalar, and clearly indicate what are $w$ and $w_0$ are in terms of
 parameters of the classification model.\\
+
+
+
 \end{enumerate}
 
 
@@ -848,6 +877,17 @@ Consider the two-dimensional data points from two classes $W_1$ and $W_2$. (The 
 \begin{enumerate}
 \item Determine and plot the optimal projection line in a single dimension using Fisher linear discriminant method. \\
 
+The sample mean vector and covariance matrix for each given data set has been calculated.
+\begin{align*}
+\mu_1 = \svector{1.8334}{1.8334}, \mu_2 = \svector{3.8334}{3}, \Sigma_1 = \smatrix{1.1}{1}{1}{1.8667}, \Sigma_2 = \smatrix{2.7857}{0.25}{0.25}{1.4107}
+\end{align*}
+So:
+\begin{align*}
+&V = (0.5 \Sigma_1 + 0.5\Sigma_2)^{-1}(\mu_2 - \mu_1) = \frac{11.1725}{2}\smatrix{3.8857}{1.25}{1.25}{3.2774}\svector{2}{1.1667} \\
+&\rightarrow V = \frac{11.1725}{2}\svector{9.223}{6.3234} = \svector{51.5220}{35.3241}
+\end{align*}
+And to compute optimum $v_0$, the iterative process should be accomplished. The script is implemented in MATLAB and the result is $v_0 = 86.9$ with $\epsilon = 0$.
+
 
 \begin{center}
 \line(1,0){250}
@@ -856,6 +896,14 @@ Consider the two-dimensional data points from two classes $W_1$ and $W_2$. (The 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Show the mapping of the points to the line as well as the Bayes discriminant assuming a suitable distribution.\\
 
+Figure \ref{fig:10-1}, displays required diagram.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{Imgs/10-1.png}
+\caption{Mapped data points and the best fitting distributions for mapped data, problem 10.}
+\label{fig:10-1}
+
+\end{figure}
 
 
 \end{enumerate}
@@ -878,9 +926,24 @@ To make things a little easier, we left out one of the flower types and only inc
 
 Every line in each file describes one data item; the 5 numbers in each row contain the 4 measurements in above order plus the class label. Use only the second measurement (sepal width) for classification and ignore all others.
 
+\begin{center}
+\line(1,0){100}
+\end{center}
+The script of this problem is attached to the submitted homework zip file. In this report just the answers have been reported.
+\begin{center}
+\line(1,0){100}
+\end{center}
 
 \begin{enumerate}
 \item Load the training data. Compute a feature histogram for each class (see histc and bar in Matlab), using edges between the bins at 0.2 intervals between 1 and 5; i.e. 1 : 0.2 : 5. Show the histograms either in two figures using subplot in Matlab, and make sure both plots have the same x-axis range.\\
+
+Figure \ref{fig:11-1} displays the required subplot for feature histograms of both classes.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Imgs/11-1.png}
+\caption{Histogram of features of two classes in train data set, problem 11.}
+\label{fig:11-1}
+\end{figure}
 
 \begin{center}
 \line(1,0){250}
@@ -888,6 +951,8 @@ Every line in each file describes one data item; the 5 numbers in each row conta
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Estimate the class priors from the training data. Report the prior probabilities of a flower being an “Iris Setosa” or being an “Iris Versicolor”.\\
+
+$P(W_0) = 0.5571$ and $P(W_1) = 0.4429$.
 
 \begin{center}
 \line(1,0){250}
@@ -902,6 +967,27 @@ Every line in each file describes one data item; the 5 numbers in each row conta
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Plot the estimated class-conditional densities in a single diagram. Make a second figure plotting the class posteriors for both classes. Write down the equation you used to compute the class posteriors .\\
+Figure \ref{fig:11-2} illustrates the class-conditional densities. 
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{0.4\textwidth}
+\centering
+\includegraphics[scale=0.3]{Imgs/11-2.png}
+\caption{Estimated class-conditional densities}
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+\includegraphics[scale=0.3]{Imgs/11-3.png}
+\caption{Estimated class posterior densities}
+\end{subfigure}
+\caption{Estimated class-conditional and class posterior densities, problem 11}
+\label{fig:11-2}
+\end{figure}
+
+To compute the class posterior the following equation has been used.
+\begin{equation}
+P(W_i|X) = \mathlarger{\frac{P(X|W_i)P(W_i)}{\mathlarger{\Sigma}_{l=1}^2 P(X|W_l)P(W_l)}}
+\end{equation}
 
 \begin{center}
 \line(1,0){250}
@@ -910,12 +996,18 @@ Every line in each file describes one data item; the 5 numbers in each row conta
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Compute the Bayes classification of the training data. How many “Setosas” do you mistakenly classify as “Versicolor” and how many “Versicolors” do you mistakenly classify as “Setosa”? What is the overall training error (i.e. percentage of incorrectly classified training data items)?\\
 
+The error rate for class 0, which is the number of class 0 data misclassified as class 1 is 0.0513 and the error rate for class 1, which is the number of class 1 data misclassified as class 2 is 0.0645. The total error rate for training data is 0.0571.
+
 \begin{center}
 \line(1,0){250}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Now classify the test data. How many “Setosas” do you mistakenly classify as “Versicolor” and how many “Versicolors” do you mistakenly classify as “Setosa”? Report the number of cases that are incorrectly classified as above as well as the test error.\\
+
+
+The error rate for class 0, which is the number of class 0 data misclassified as class 1 is 0.0256 and the error rate for class 1, which is the number of class 1 data misclassified as class 2 is 0.0645. The total error rate for testing data is 0.0428.
+
 
 \end{enumerate}
 

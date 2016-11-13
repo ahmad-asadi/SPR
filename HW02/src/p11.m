@@ -1,6 +1,9 @@
 train_data = load('Iris_train.dat') ;
 train_data = train_data(:,[2,5]) ;
 
+test_data = load('Iris_test.dat') ;
+test_data = test_data(:,[2,5]) ;
+
 ind1 = 1 ;
 ind2 = 1 ;
 for i = 1 : size(train_data,1)
@@ -13,8 +16,24 @@ for i = 1 : size(train_data,1)
     end
 end
 
-feat_hist(train_data1) ;
-feat_hist(train_data2) ;
+ind1 = 1 ;
+ind2 = 1 ;
+for i = 1 : size(test_data,1)
+    if test_data(i,2) == 0
+        test_data1(ind1 , :) = test_data(i,:) ;
+        ind1 = ind1 + 1 ;
+    elseif test_data(i,2) == 1
+        test_data2(ind2 , :) = test_data(i,:) ;
+        ind2 = ind2 + 1; 
+    end
+end
+
+
+%%% Draw image histogram
+ax = subplot(2,1,1);
+feat_hist(train_data1,ax) ;
+ax = subplot(2,1,2);
+feat_hist(train_data2,ax) ;
 
 %%% Estimating class priors
 n = size(train_data1,1) + size(train_data2,1) ; 
@@ -46,12 +65,47 @@ plot(X,Y1,'b') ;
 hold on ;
 plot(X,Y2,'g') ;
 
-function feat_hist(train_data)
-
-    binrange = 1:0.2:5 ;
-    [bins] = histc(train_data(:,1),binrange);
-
-    figure;
-    bar(binrange, bins, 'histc') ;
-
+%%% train data confusion matrix
+threshold = X(1,1) ;
+for i = 1 : size(Y1,2) 
+    if(Y2(1,i) > Y1(1,i))
+        threshold = X(1,i) ;
+    else
+        break ;
+    end
 end
+n1 = 0 ;
+n2 = 0 ;
+for i = 1 : size(train_data1,2)
+    if(train_data1(i,1) > threshold)
+            n1 = n1 + 1 ;
+    end
+end
+for i = 1 : size(train_data2,2)
+    if(train_data2(i,1) <= threshold)
+            n2 = n2 + 1 ;
+    end
+end
+disp('TRAIN SET CLASSIFICATION ERRORS:');
+fprintf('the number of class 0 data predicted as class 1 is %d out of %d, error rate is %d\n',n1,size(train_data1,1),n1/size(train_data1,1)) ;
+fprintf('the number of class 1 data predicted as class 0 is %d out of %d, error rate is %d\n',n2,size(train_data2,1),n2/size(train_data2,1)) ;
+fprintf('the overall training data error is %d\n', (n1 + n2) / (size(train_data1,1) + size(train_data2,1))) ;
+
+%%% test data confusion matrix
+n1 = 0 ;
+n2 = 0 ;
+for i = 1 : size(test_data1,2)
+    if(test_data1(i,1) > threshold)
+            n1 = n1 + 1 ;
+    end
+end
+for i = 1 : size(test_data2,2)
+    if(test_data2(i,1) <= threshold)
+            n2 = n2 + 1 ;
+    end
+end
+disp('TEST SET CLASSIFICATION ERRORS:');
+fprintf('the number of class 0 data predicted as class 1 is %d out of %d, error rate is %d\n',n1,size(train_data1,1),n1/size(train_data1,1)) ;
+fprintf('the number of class 1 data predicted as class 0 is %d out of %d, error rate is %d\n',n2,size(train_data2,1),n2/size(train_data2,1)) ;
+fprintf('the overall training data error is %d\n', (n1 + n2) / (size(train_data1,1) + size(train_data2,1))) ;
+

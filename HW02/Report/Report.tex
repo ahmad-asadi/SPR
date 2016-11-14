@@ -221,7 +221,29 @@ The $\mu = 1.0795e-78$ is the best value estimated with $\epsilon_1 = 0.051$ err
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item Find the threshold value and total error for the minimax test.
+\item Find the threshold value and total error for the minimax test.\\
+The threshold in minimax test, when $c_{11} = c_{22} $ and $c_{12} = c_{21}$, should satisfy the following equation:
+\begin{equation}
+\int_{R_1} p_1(X) dx = \int_{R_2} p_2(X)dx
+\end{equation}
+So:
+\begin{align*}
+&\int_{R_1} N(\mu_1, \Sigma_1) dx = \int_{R_2} N(\mu_2, \Sigma_2)dx \\
+&\rightarrow \int_{R_1} \frac{e^{-0.5(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)}}{\sqrt{2\pi} |\Sigma_1|^{\frac{1}{2}}} dx = \int_{R_2} \frac{e^{-0.5(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)}}{\sqrt{2\pi} |\Sigma_2|^{\frac{1}{2}}} dx 
+\end{align*}
+
+As $|\Sigma_1| = |\Sigma_2|$ :
+
+\begin{align*}
+ \int_{R_1} e^{-0.5(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)} dx = \int_{R_2} e^{-0.5(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)}dx 
+\end{align*}
+The solution of the above equation is not easy, so taking information about data given in problem and the figure \ref{fig:1-2}, the solution of the equation is $X_1 = 0$ and $X_2 = -2$, which makes the error of both classes equal.\\
+The other solution could be first projecting the data to a one-dimensional space using appropriate $V$ and $v_0$ such that:
+\begin{equation}
+V^TX + v_0 .\gl 0
+\end{equation}
+
+The process of finding such parameters has been fully described in problem 2. The best parameters are computed as $V = \svector{-0.5}{-0.25}$ and $v_0 = 0.5$ with total error $\epsilon = 0.0227$ .
 
 \begin{center}
 \line(1,0){250}
@@ -229,6 +251,14 @@ The $\mu = 1.0795e-78$ is the best value estimated with $\epsilon_1 = 0.051$ err
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Plot the error-reject curve.
+The error-reject curve which displays the error rate according to regions has been displayed in figure \ref{fig:1-4}. In this diagram, the parameter $s$ represent the acceptance region.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Imgs/1-4.png}
+\caption{The error-reject curve for the data given in problem 1}
+\label{fig:1-4}
+
+\end{figure}
 
 \end{enumerate} 
 \end{enumerate}
@@ -886,7 +916,7 @@ So:
 &V = (0.5 \Sigma_1 + 0.5\Sigma_2)^{-1}(\mu_2 - \mu_1) = \frac{11.1725}{2}\smatrix{3.8857}{1.25}{1.25}{3.2774}\svector{2}{1.1667} \\
 &\rightarrow V = \frac{11.1725}{2}\svector{9.223}{6.3234} = \svector{51.5220}{35.3241}
 \end{align*}
-And to compute optimum $v_0$, the iterative process should be accomplished. The script is implemented in MATLAB and the result is $v_0 = 86.9$ with $\epsilon = 0$.
+And to compute optimum $v_0$, the iterative process should be accomplished. The script is implemented in MATLAB and the result is $v_0 = 1.8969$ with $\epsilon = 0.1667$.
 
 
 \begin{center}

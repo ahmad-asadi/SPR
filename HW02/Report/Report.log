@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.10.14)  14 NOV 2016 23:23
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.10.14)  14 NOV 2016 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,9 +500,6 @@ No file Report.bbl.
 [26] (./Report.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:

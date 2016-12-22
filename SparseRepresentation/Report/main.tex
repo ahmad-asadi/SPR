@@ -1,0 +1,65 @@
+% !TEX TS-program = XeLaTeX
+% Commands for running this example:
+% 	 xelatex twocol-example
+% 	 xelatex twocol-example
+% End of Commands
+\documentclass[12pt]{article}
+\pagestyle{empty}
+
+\usepackage{tram}
+\usepackage{relsize}
+\usepackage{amsmath}
+\usepackage{float}
+
+\usepackage{xepersian}
+\settextfont[Scale=1]{B Nazanin}
+\setlatintextfont{Georgia}
+
+
+\newcommand\numberthis[1][]{%
+    \refstepcounter{equation}%
+    \ifx#1\empty\else\label{eq:#1}\fi%
+    \tag{\theequation}%
+}
+\newcommand{\enfootnote}[1]{\footnote{\lr{#1}}}
+
+\title{ 
+\Large{
+\textbf{
+کاربرد دسته‌بندی کننده‌های مبتنی بر بازنمایی تنک در دسته‌بندی تصاویر
+}}}
+\date{
+\small{
+\textbf{
+دی ماه 1395
+}}}
+\author{
+\small{
+\textbf{
+احمد اسدی - ۹۴۱۳۱۰۹۱
+}}}
+
+\pagenumbering{gobble}
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+{\centering
+\vspace{10pt}
+\begin{tram}[400]
+\large
+\parbox{\textwidth}{%
+دسته‌بندی‌ کننده‌های مبتنی بر بازنمایی تنک\enfootnote{Sparse Representation Based Classifiers (SRC)} عملکرد خوبی در زمینه دسته‌بندی تصاویر، مخصوصا در زمینه دسته‌بندی تصاویر صورت افراد، از خود نشان داده‌اند. به دلیل اهمیت استفاده از چنین دسته‌بندی‌کننده‌هایی، در این گزارش به تفسیر و تبیین این دسته از دسته‌بندی کننده‌ها و معرفی برخی روش‌های بهبود کارایی آن‌ها خواهیم پرداخت. همان‌طور که خواهیم دید، چنین دسته‌بندی‌ کننده‌هایی در مواقعی که داده‌های کلاس‌های مختلف روی یک بردار جهت یکسان توزیع شده باشند، دچار مشکل می‌شود. بنابراین با توسعه این روش با استفاده از یک توسعه غیر خطی، دسته‌بندی کننده‌ای تحت عنوان دسته‌بندی‌ کننده مبتنی بر بازنمایی هسته تنک\enfootnote{Kernel Sparse Representation Based Classifier (KSRC)} را که در پژوهش \cite{zhang2012kernel} در سال 2012 ارائه شده است، معرفی خواهیم‌نمود. استفاده از توسعه غیرخطی روش بازنمایی تنک، موجب افزایش کارایی مدل شده و امکان ترکیب آن با سایر مدل‌ها را فراهم می‌آورد. به عنوان نمونه در پژوهش \cite{gao2013sparse} مدل ترکیبی از بازنمایی تنک و تطبیق هرم مکانی\enfootnote{Spatial Pyramid Matching (SPM)} ارائه شده است که در زمینه دسته‌بندی تصاویر، دقت بالایی را از خود نشان داده است. در انتها روشی را ارائه خواهیم داد که در آن با ترکیب روش یادگیری چندهسته‌ای \enfootnote{Multiple Kernel Learning} و بازنمایی تنک، کدهای تنک\enfootnote{Sparse Codes} و وزن‌های هسته در دو مرحله به مدل آموزش داده می‌شوند. این مدل که در پژوهش \cite{shrivastava2014multiple} ارائه شده است، روی مجموعه‌داده‌های مختلفی به منظور دسته‌بندی تصاویر استفاده شده و کارایی خوبی از خود نشان داده است.
+
+}
+\end{tram}
+}
+    \end{abstract}
+    \small
+\bibliographystyle{ieeetr-fa}
+\bibliography{ref}
+  \end{@twocolumnfalse}
+]
+
+\end{document} 

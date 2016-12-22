@@ -1,0 +1,3 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Plotting conditional Parzen window based density estimates}{2}
+\contentsline {section}{\numberline {2}Plotting Parzen window estimate using Gaussian window function}{3}

@@ -30,4 +30,13 @@ A.~Shrivastava, V.~M. Patel, and R.~Chellappa, ``Multiple kernel learning for
 
 \end{LTRbibitems}
 
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{wright2009robust}
+J.~Wright, A.~Y. Yang, A.~Ganesh, S.~S. Sastry, and Y.~Ma, ``Robust face
+  recognition via sparse representation,'' {\em IEEE transactions on pattern
+  analysis and machine intelligence},  vol.31,  no.2,  pp.210--227, 2009.
+
+\end{LTRbibitems}
+
 \end{thebibliography}

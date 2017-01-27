@@ -1,3 +1,6 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Plotting conditional Parzen window based density estimates}{2}
-\contentsline {section}{\numberline {2}Plotting Parzen window estimate using Gaussian window function}{3}
+\contentsline {section}{\numberline {1}Plotting conditional Parzen window based density estimates}{4}
+\contentsline {section}{\numberline {2}Plotting Parzen window estimate using Gaussian window function}{5}
+\contentsline {section}{\numberline {3}Classification Error Rate Of K-Nearest-Neighbour Algorithm}{7}
+\contentsline {section}{\numberline {4}Computer Project 1}{9}
+\contentsline {section}{\numberline {5}Computer Project 2}{11}

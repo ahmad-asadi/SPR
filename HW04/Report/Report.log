@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  22 DEC 2016 16:36
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  23 DEC 2016 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,26 +197,64 @@ Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \PaperWidth=\dimen122
 \PaperHeight=\dimen123
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count106
+\lst@gtempboxa=\box28
+\lst@token=\toks25
+\lst@length=\count107
+\lst@currlwidth=\dimen124
+\lst@column=\count108
+\lst@pos=\count109
+\lst@lostspace=\dimen125
+\lst@width=\dimen126
+\lst@newlines=\count110
+\lst@lineno=\count111
+\lst@maxwidth=\dimen127
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count112
+\lst@skipnumbers=\count113
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count114
 File: Imgs/logo.png Graphic file (type QTm)
 
 <use  "Imgs/logo.png" > [1
@@ -225,28 +263,183 @@ File: Imgs/logo.png Graphic file (type QTm)
 \tf@toc=\write3
 \openout3 = `Report.toc'.
 
- [1]
+ [1] (./Report.lof)
+\tf@lof=\write4
+\openout4 = `Report.lof'.
+
+ [2] (./Report.lot)
+\tf@lot=\write5
+\openout5 = `Report.lot'.
+
+ (./Report.lol)
+\tf@lol=\write6
+\openout6 = `Report.lol'.
+
+ [3]
 File: Imgs/1-1.png Graphic file (type QTm)
- <use  "Imgs/1-1.png" > [2]
+ <use  "Imgs/1-1.png" >
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [4]
 File: Imgs/2-1.png Graphic file (type QTm)
 
 <use  "Imgs/2-1.png" >
 File: Imgs/2-2.png Graphic file (type QTm)
  <use  "Imgs/2-2.png" >
 
-LaTeX Warning: Float too large for page by 52.58167pt on input line 144.
+LaTeX Warning: Float too large for page by 52.58167pt on input line 173.
+
+File: Imgs/2-3.png Graphic file (type QTm)
+<use  "Imgs/2-3.png" >
+Overfull \hbox (5.04019pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+File: Imgs/2-4.png Graphic file (type QTm)
+<use  "Imgs/2-4.png" >
+Overfull \hbox (18.3339pt too wide) in paragraph at lines 188--189
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] [4] (./Report.aux) ) 
-Here is how much of TeX's memory you used:
- 3634 strings out of 493918
- 51966 string characters out of 6150563
- 135184 words of memory out of 5000000
- 6921 multiletter control sequences out of 15000+600000
- 12861 words of font info for 46 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 42i,13n,43p,326b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Report.pdf (5 pages).
+Overfull \hbox (21.21231pt too wide) in paragraph at lines 196--196
+[]\OT1/cmr/bx/n/17.28 Classification Er-ror Rate Of K-Nearest-Neighbour
+ []
+
+File: Imgs/3-1.png Graphic file (type QTm)
+<use  "Imgs/3-1.png" > [5] [6] [7]
+File: Imgs/3-2.png Graphic file (type QTm)
+ <use  "Imgs/3-2.png" >
+File: Imgs/3-3.png Graphic file (type QTm)
+
+<use  "Imgs/3-3.png" > [8]
+Overfull \hbox (0.1808pt too wide) in paragraph at lines 232--233
+\OT1/cmr/m/n/12 The list-ing 1[] rep-re-sents the MAT-LAB script to find the le
+ave-one-out cross-validation
+ []
+
+File: Imgs/4-1.png Graphic file (type QTm)
+<use  "Imgs/4-1.png" > [9] [10]
+File: Imgs/5-1.png Graphic file (type QTm)
+ <use  "Imgs/5-1.png" >
+Overfull \hbox (10.41103pt too wide) in paragraph at lines 324--325
+ [][] 
+ []
+
+File: Imgs/5-2.png Graphic file (type QTm)
+<use  "Imgs/5-2.png" >
+Overfull \hbox (1.51836pt too wide) in paragraph at lines 329--330
+ [][] 
+ []
+
+File: Imgs/5-3.png Graphic file (type QTm)
+<use  "Imgs/5-3.png" >
+Overfull \hbox (37.8063pt too wide) in paragraph at lines 334--335
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: Imgs/5-8.png Graphic file (type QTm)
+<use  "Imgs/5-8.png" >
+File: Imgs/5-9.png Graphic file (type QTm)
+ <use  "Imgs/5-9.png" >
+File: Imgs/5-10.png Graphic file (type QTm)
+ <use  "Imgs/5-10.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+File: Imgs/5-4.png Graphic file (type QTm)
+ <use  "Imgs/5-4.png" >
+File: Imgs/5-3.png Graphic file (type QTm)
+ <use  "Imgs/5-3.png" >
+File: Imgs/5-6.png Graphic file (type QTm)
+ <use  "Imgs/5-6.png" >
+File: Imgs/5-7.png Graphic file (type QTm)
+
+<use  "Imgs/5-7.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: Imgs/5-11.png Graphic file (type QTm)
+<use  "Imgs/5-11.png" >
+File: Imgs/5-9.png Graphic file (type QTm)
+ <use  "Imgs/5-9.png" >
+File: Imgs/5-30.png Graphic file (type QTm)
+ <use  "Imgs/5-30.png" >
+File: Imgs/5-31.png Graphic file (type QTm)
+
+<use  "Imgs/5-31.png" > [12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: Imgs/5-12.png Graphic file (type QTm)
+<use  "Imgs/5-12.png" >
+File: Imgs/5-13.png Graphic file (type QTm)
+ <use  "Imgs/5-13.png" >
+File: Imgs/5-14.png Graphic file (type QTm)
+ <use  "Imgs/5-14.png" >
+File: Imgs/5-15.png Graphic file (type QTm)
+
+<use  "Imgs/5-15.png" >
+File: Imgs/5-16.png Graphic file (type QTm)
+ <use  "Imgs/5-16.png" > [13]
+File: Imgs/5-17.png Graphic file (type QTm)
+ <use  "Imgs/5-17.png" >
+File: Imgs/5-18.png Graphic file (type QTm)
+
+<use  "Imgs/5-18.png" >
+File: Imgs/5-19.png Graphic file (type QTm)
+ <use  "Imgs/5-19.png" >
+File: Imgs/5-20.png Graphic file (type QTm)
+ <use  "Imgs/5-20.png" >
+File: Imgs/5-21.png Graphic file (type QTm)
+
+<use  "Imgs/5-21.png" >
+File: Imgs/5-22.png Graphic file (type QTm)
+ <use  "Imgs/5-22.png" >
+File: Imgs/5-23.png Graphic file (type QTm)
+ <use  "Imgs/5-23.png" >
+File: Imgs/5-24.png Graphic file (type QTm)
+
+<use  "Imgs/5-24.png" >
+File: Imgs/5-25.png Graphic file (type QTm)
+ <use  "Imgs/5-25.png" > [14]
+File: Imgs/5-26.png Graphic file (type QTm)
+ <use  "Imgs/5-26.png" >
+File: Imgs/5-27.png Graphic file (type QTm)
+
+<use  "Imgs/5-27.png" >
+File: Imgs/5-28.png Graphic file (type QTm)
+ <use  "Imgs/5-28.png" >
+File: Imgs/5-29.png Graphic file (type QTm)
+ <use  "Imgs/5-29.png" >
+(./Report.bbl [15] [16] [17] [18] [19]) [20] (./Report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6055 strings out of 493918
+ 82546 string characters out of 6150563
+ 236633 words of memory out of 5000000
+ 9271 multiletter control sequences out of 15000+600000
+ 13208 words of font info for 47 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 42i,13n,43p,697b,1628s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on Report.pdf (21 pages).

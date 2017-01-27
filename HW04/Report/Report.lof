@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {figure}{\numberline {1}{\ignorespaces Estimated likelihood of class conditional densities using Parzen window.\relax }}{4}
+\contentsline {figure}{\numberline {2}{\ignorespaces Estimated density functions using Parzen Gaussian window\relax }}{6}
+\contentsline {figure}{\numberline {3}{\ignorespaces Estimated density function and its contour lines using 3NN according to given dataset.\relax }}{7}
+\contentsline {figure}{\numberline {4}{\ignorespaces Assumed distribution for given dataset in problem 3.\relax }}{7}
+\contentsline {figure}{\numberline {5}{\ignorespaces Classification results of 1-NN and 3-NN classifiers on given dataset in problem 3.\relax }}{8}
+\contentsline {figure}{\numberline {6}{\ignorespaces The leave-one-out cross-validation error rate gained for each $K$ over given dataset in computer exercise 1.\relax }}{10}
+\contentsline {figure}{\numberline {7}{\ignorespaces Effect of Parzen window kernel function to density estimation\relax }}{12}
+\contentsline {figure}{\numberline {8}{\ignorespaces Assumed 2D Gaussian distribution to be estimated.\relax }}{13}
+\contentsline {figure}{\numberline {9}{\ignorespaces Estimated 2D density function using Parzen window using different kernels.\relax }}{13}
+\contentsline {figure}{\numberline {10}{\ignorespaces Estimated densities using Parzen window with different bandwidths.\relax }}{14}
+\contentsline {figure}{\numberline {11}{\ignorespaces Estimation results for 2D density estimation using Parzen window with different bandwidths.\relax }}{15}
+\contentsline {figure}{\numberline {12}{\ignorespaces Estimation results for 1D density estimation using K-NN with different Ks.\relax }}{16}
+\contentsline {figure}{\numberline {13}{\ignorespaces Estimation results for 2D density estimation using K-NN with different Ks.\relax }}{17}
+\contentsline {figure}{\numberline {14}{\ignorespaces Estimated 1D density function using histogram density estimation with different bin counts.\relax }}{18}
+\contentsline {figure}{\numberline {15}{\ignorespaces Estimated 2D density function using histogram density estimation with different bin counts.\relax }}{19}

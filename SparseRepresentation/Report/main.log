@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  27 JAN 2017 22:06
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  28 JAN 2017 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1342,7 +1342,45 @@ Overfull \hbox (11.74988pt too wide) detected at line 482
 [][] 
  []
 
-[11] (./main.bbl
+
+Underfull \hbox (badness 1122) in paragraph at lines 486--487
+[][]\EU1/BNazanin(0)/m/n/12 در ادامه با نرمال کردن ستون‌های ماتریس انتقال[]
+ []
+
+[11]
+Underfull \hbox (badness 2359) in paragraph at lines 490--497
+[]\EU1/BNazanin(0)/m/n/12 در این بخش عمل‌کرد روش ارائه شده در [[]] با[]
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 490--497
+[]\EU1/BNazanin(0)/m/n/12 نمودار سمت راست در شکل ۵[] نمایش‌دهنده خطای[]
+ []
+
+File: Imgs/2-2.png Graphic file (type QTm)
+<use  "Imgs/2-2.png" >
+File: Imgs/2-3.png Graphic file (type QTm)
+ <use  "Imgs/2-3.png" > [12] [13]
+Underfull \hbox (badness 2359) in paragraph at lines 560--562
+[]\EU1/BNazanin(0)/m/n/12 که در این حالت، مساله [] به یک مساله[]
+ []
+
+[14]
+Overfull \hbox (11.74988pt too wide) detected at line 670
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 694--697
+[]\EU1/BNazanin(0)/m/n/12 در این آزمایش دو مجموعه داده گاوسی با ماتریس[]
+ []
+
+[15]
+File: Imgs/3-1.png Graphic file (type QTm)
+ <use  "Imgs/3-1.png" > (./main.bbl
 Underfull \hbox (badness 2088) in paragraph at lines 9--12
 []\EU1/Georgia(0)/m/n/12 L. Zhang, W.-D. Zhou, P.-C. Chang,
  []
@@ -1389,9 +1427,7 @@ Underfull \hbox (badness 4846) in paragraph at lines 36--39
 []\EU1/Georgia(0)/m/n/12 J. Wright, A. Y. Yang, A. Ganesh,
  []
 
-) [12
-
-] (./main.aux)
+) [16] [17] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1400,12 +1436,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18416 strings out of 493918
- 359483 string characters out of 6150563
+ 18446 strings out of 493918
+ 359777 string characters out of 6150563
  453448 words of memory out of 5000000
- 21372 multiletter control sequences out of 15000+600000
+ 21399 multiletter control sequences out of 15000+600000
  10616 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 53i,10n,47p,10452b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,14n,47p,10452b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (12 pages).
+Output written on main.pdf (17 pages).
